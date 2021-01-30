@@ -57,6 +57,9 @@ class AddCityFragment : Fragment(), OnMapReadyCallback {
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        toolbar.setNavigationOnClickListener {
+            requireActivity().onBackPressed()
+        }
         map.onCreate(savedInstanceState)
         map.onResume()
         map.getMapAsync(this)

@@ -1,5 +1,6 @@
 package com.work.weather.db
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Dao
@@ -8,7 +9,7 @@ interface CityDao {
     suspend fun addCity(city: City)
 
     @Query("Select * from city")
-    suspend fun getCities(): List<City>
+    fun getCities(): LiveData<List<City>>
 
     @Update
     suspend fun updateCity(city: City)

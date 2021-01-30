@@ -45,6 +45,9 @@ class WeatherDetailsFragment : Fragment() {
         arguments?.let {
             city = WeatherDetailsFragmentArgs.fromBundle(it).city
             toolbar_layout.title = city?.city
+            toolbar.setNavigationOnClickListener {
+                requireActivity().onBackPressed()
+            }
         }
 
         vmFactoty = WeatherVmFactoty(this.requireActivity().application, repository, city!!)

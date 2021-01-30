@@ -11,32 +11,19 @@ import java.util.*
 
 class CityListViewModel(private val dataBase: CityDataBase) : ViewModel() {
 
-    init {
-        getCityList()
-    }
-
     private lateinit var job: Job
-    private val _cityList = MutableLiveData<List<City>>()
 
     var deletedItems = MutableLiveData<LinkedList<City>>()
 
-    val cityList: LiveData<List<City>>
-        get() = _cityList
-
-    fun getCityList() {
-        job = Coroutines.doWorkInIo(
-            { dataBase.getCityDao().getCities() },
-            {
-                _cityList.value = it
-            }
-        )
+    fun getCityList() :LiveData<List<City>> {
+        return dataBase.getCityDao().getCities()
     }
 
     fun deleteCity(city: City) {
         job = Coroutines.doWorkInIo(
             { dataBase.getCityDao().deleteCity(city) },
             {
-                getCityList()
+                //getCityList()
                 var list = LinkedList<City>()
                 list.add(city)
                 deletedItems.value = list

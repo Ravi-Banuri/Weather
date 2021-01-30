@@ -37,6 +37,8 @@
     <string name="pref_entry_values_units_standard">standard</string>
     <string name="pref_entry_values_units_metric">metric</string>
     <string name="pref_entry_values_units_imperial">imperial</string>
+    <string name="select_city">Select City</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

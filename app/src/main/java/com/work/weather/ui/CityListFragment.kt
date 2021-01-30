@@ -61,7 +61,7 @@ class CityListFragment : Fragment(), CityAdapter.CityDeleteClickListener {
         val dataBase = CityDataBase(requireActivity())
         vmFactory = CityListVmFactory(dataBase)
         viewModel = ViewModelProviders.of(this, vmFactory).get(CityListViewModel::class.java)
-        viewModel.cityList.observe(viewLifecycleOwner, Observer { cityList ->
+        viewModel.getCityList().observe(viewLifecycleOwner, Observer { cityList ->
             city_list_view.also {
                 it.setHasFixedSize(true)
                 it.layoutManager = LinearLayoutManager(activity)
