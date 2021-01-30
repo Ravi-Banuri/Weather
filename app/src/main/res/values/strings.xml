@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="city_list_title">City List</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="speed">Speed</string>
+    <string name="degree">Degree</string>
+    <string name="help_text"><![CDATA[&nbsp;
+        <p>&nbsp;</p>
+
+        <p><strong>How to use Weather App?</strong></p>
+        <p>&nbsp;</p>
+        <ol type = "1">
+        <li>On opening application list of cities is shown.</li>
+        <li>Click on any city name to see today\'s wwather.</li>
+        <li>On list click on Delete icon to remove city from the list</li>
+        <li>City list scree click add button to add a city from Map.</li>
+        <li>On click on add icon map screen is shown</li>
+        <li>Place pin on any city and click on add button.</li>
+        <li>On clicking add button in Map screen selected city is added to Database navigate back to City list screen.</li>
+        <li>Units can be changed to from setting of application. </li>]]></string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+
+    <string name="pref_category_units">Select Units</string>
+
+    <string name="pref_title_units">Units</string>
+    <string name="pref_key_units" translatable="false">units</string>
+    <string name="pref_entries_units_standard">Standard</string>
+    <string name="pref_entries_units_metric">Metric</string>
+    <string name="pref_entries_units_imperial">Imperial</string>
+
+    <string name="pref_entry_values_units_standard">standard</string>
+    <string name="pref_entry_values_units_metric">metric</string>
+    <string name="pref_entry_values_units_imperial">imperial</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
